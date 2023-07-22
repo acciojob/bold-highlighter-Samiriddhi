@@ -1,16 +1,13 @@
 function highlight() {
     //Write your code here
-	 return document.getElementsByTagName("strong")="green";
-	
-
-
+  var boldWords = document.querySelectorAll('strong')
+  boldWords.forEach(function(word) {
+    word.style.color = 'green';
+  });
 }
-
-
 function return_normal() {
-    //Write your code here
-	return document.getElementsByTagName("strong")="blue"
-	
-
-    
+   var boldWords = document.querySelectorAll('strong')
+  boldWords.forEach(function(word) {
+    word.style.color = 'black';
+  });
 }
